@@ -55,8 +55,8 @@ function createSlide(image, isActive) {
 
     // Crea un'immagine principale e imposta gli attributi
     const mainImage = document.createElement('img');
-    mainImage.src = image.image;
-    mainImage.alt = image.title;
+    mainImage.setAttribute('src', image.image);
+    mainImage.setAttribute('alt', image.title);
 
     // Crea un elemento div per le informazioni testuali
     const imageInfo = document.createElement('div');
